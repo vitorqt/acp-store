@@ -1,0 +1,64 @@
+<h1 class="h2">Cadastrar Usuários</h1>
+<hr>
+
+<form>
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationServer01">Nome</label>
+        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="" value="" required>
+      </div>
+      
+      <div class="col-md-4 mb-3">
+        <label for="validationServer02">Sobrenome</label>
+        <input type="text" class="form-control is-valid" id="validationServer02" placeholder="" value="" required>
+        
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationServerUsername">E-mail</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+          </div>
+          <input type="text" class="form-control is-valid" id="validationServerUsername" placeholder="" aria-describedby="inputGroupPrepend3" required>
+          <div class="invalid-feedback">
+            Porfavor digite seu e-mail corretamente.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer03">Cidade</label>
+        <input type="text" class="form-control is-valid" id="validationServer03" placeholder="" required>
+        <div class="invalid-feedback">
+          Porfavor digite uma cidade valida.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationServer04">Estado</label>
+        <input type="text" class="form-control is-valid" id="validationServer04" placeholder="" required>
+        <div class="invalid-feedback">
+          Porfavor digita um estado válido
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationServer05">CEP</label>
+        <input type="text" class="form-control is-valid" id="validationServer05" placeholder="" required>
+        <div class="invalid-feedback">
+          Porfavor digite um CEP válido.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input is-valid" type="checkbox" value="" id="invalidCheck3" required>
+        <label class="form-check-label" for="invalidCheck3">
+          Aceito os termos de cadastro.
+        </label>
+        <div class="invalid-feedback">
+          Você deve concordar com os termos antes de finalizar.
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Enviar Cadastro</button>
+  </form>
