@@ -5,12 +5,12 @@
     <div class="form-row">
       <div class="col-md-4 mb-3">
         <label for="validationServer01">Nome</label>
-        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="" value="" required>
+        <input type="text" class="form-control is-valid" id="validationServer01" name="name" [(ngModel)]="name" placeholder="" value="" required>
       </div>
       
       <div class="col-md-4 mb-3">
-        <label for="validationServer02">Sobrenome</label>
-        <input type="text" class="form-control is-valid" id="validationServer02" placeholder="" value="" required>
+        <label for="validationServer02">Role</label>
+        <input type="text" class="form-control is-valid" id="validationServer02" name="role" [(ngModel)]="role" placeholder="" value="" required>
         
       </div>
       <div class="col-md-4 mb-3">
@@ -19,7 +19,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroupPrepend3">@</span>
           </div>
-          <input type="text" class="form-control is-valid" id="validationServerUsername" placeholder="" aria-describedby="inputGroupPrepend3" required>
+          <input type="text" class="form-control is-valid" id="validationServerUsername" name="email" [(ngModel)]="email" placeholder="" aria-describedby="inputGroupPrepend3" required>
           <div class="invalid-feedback">
             Porfavor digite seu e-mail corretamente.
           </div>
@@ -28,15 +28,15 @@
     </div>
     <div class="form-row">
       <div class="col-md-6 mb-3">
-        <label for="validationServer03">Cidade</label>
-        <input type="text" class="form-control is-valid" id="validationServer03" placeholder="" required>
+        <label for="validationServer03">Senha</label>
+        <input type="password" class="form-control is-valid" id="validationServer03" name="password" [(ngModel)]="password" placeholder="" required>
         <div class="invalid-feedback">
           Porfavor digite uma cidade valida.
         </div>
       </div>
       <div class="col-md-3 mb-3">
-        <label for="validationServer04">Estado</label>
-        <input type="text" class="form-control is-valid" id="validationServer04" placeholder="" required>
+        <label for="validationServer04">Senha Confirmação</label>
+        <input type="text" class="form-control is-valid" id="validationServer04" name="password_confirmation" [(ngModel)]="password_confirmation" placeholder="" required>
         <div class="invalid-feedback">
           Porfavor digita um estado válido
         </div>
@@ -60,5 +60,5 @@
         </div>
       </div>
     </div>
-    <button class="btn btn-primary" type="submit">Enviar Cadastro</button>
+    <button class="btn btn-primary" type="button" (click)="submit()">Enviar Cadastro</button>
   </form>
